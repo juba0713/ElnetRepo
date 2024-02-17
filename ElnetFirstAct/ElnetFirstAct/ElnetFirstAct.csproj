@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\FB\Global\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\login\style.css" />
+  </ItemGroup>
+
 </Project>

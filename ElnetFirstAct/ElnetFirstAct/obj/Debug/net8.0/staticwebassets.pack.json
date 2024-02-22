@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\ElnetFirstAct.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Julius Basas\\source\\repos\\ElnetRepo\\ElnetFirstAct\\ElnetFirstAct\\wwwroot\\css\\common.css",
+      "PackagePath": "staticwebassets\\css\\common.css"
+    },
+    {
+      "Id": "C:\\Users\\Julius Basas\\source\\repos\\ElnetRepo\\ElnetFirstAct\\ElnetFirstAct\\wwwroot\\css\\header.css",
+      "PackagePath": "staticwebassets\\css\\header.css"
+    },
+    {
       "Id": "C:\\Users\\Julius Basas\\source\\repos\\ElnetRepo\\ElnetFirstAct\\ElnetFirstAct\\wwwroot\\css\\login\\style.css",
       "PackagePath": "staticwebassets\\css\\login\\style.css"
     },
@@ -13,8 +21,16 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Julius Basas\\source\\repos\\ElnetRepo\\ElnetFirstAct\\ElnetFirstAct\\wwwroot\\css\\top.css",
+      "PackagePath": "staticwebassets\\css\\top.css"
+    },
+    {
       "Id": "C:\\Users\\Julius Basas\\source\\repos\\ElnetRepo\\ElnetFirstAct\\ElnetFirstAct\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Julius Basas\\source\\repos\\ElnetRepo\\ElnetFirstAct\\ElnetFirstAct\\wwwroot\\image\\AnswerEaseLogo.png",
+      "PackagePath": "staticwebassets\\image\\AnswerEaseLogo.png"
     },
     {
       "Id": "C:\\Users\\Julius Basas\\source\\repos\\ElnetRepo\\ElnetFirstAct\\ElnetFirstAct\\wwwroot\\js\\site.js",

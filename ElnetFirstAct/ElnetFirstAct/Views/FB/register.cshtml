@@ -1,7 +1,88 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@model RegisterDto
 @{
 }
-
-<p>Register</p>
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+<head>
+    <title>FB: Register</title>
+    <meta charset="utf-8">
+    
+    <link rel="icon" type="image/png" href="~/favicon.ico" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/register/style.css">
+    <link rel="stylesheet" href="~/css/common.css">
+    <link rel="stylesheet" href="~/css/header.css">
+   
+    
+    <style>
+        .errorMsg {
+            color: red;
+            display: flex;
+            font-size: 15px;
+            margin: -15px 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    @Html.Partial("header")
+    <div class="container">
+        <div class="content">
+            <div class="text">
+                Register
+            </div>
+            <form method="POST">
+                <div class="field">
+                    <input type="text" name="Email" required>
+                    <span class="fas fa-user"></span>
+                    <label>Email</label>
+                </div>
+                @if (TempData.ContainsKey("EmailError"))
+                {
+                    <div class="errorMsg">
+                        @TempData["EmailError"]
+                    </div>
+                }
+                <div class="field">
+                    <input type="text" name="FirstName" required>
+                    <span class="fas fa-user"></span>
+                    <label>First Name</label>
+                </div>
+                <div class="field">
+                    <input type="text" name="LastName" required>
+                    <span class="fas fa-user"></span>
+                    <label>Last Name</label>
+                </div>
+                <div class="field">
+                    <input type="password" name="Password" required>
+                    <span class="fas fa-lock"></span>
+                    <label>Password</label>
+                </div>
+                <div class="field">
+                    <input type="password" name="ConPassword" required>
+                    <span class="fas fa-lock"></span>
+                    <label>Confirm Password</label>
+                </div>
+                @if (TempData.ContainsKey("PasswordError"))
+                {
+                    <div class="errorMsg">
+                        @TempData["PasswordError"]
+                    </div>
+               
+                }
+                <button>Sign in</button>
+                <div class="sign-up">
+                    Already have an account?
+                    <a href="/FB/Login">Login now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

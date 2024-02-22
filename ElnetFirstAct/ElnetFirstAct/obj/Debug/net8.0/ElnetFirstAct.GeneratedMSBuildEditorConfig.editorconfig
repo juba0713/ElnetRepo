@@ -14,9 +14,17 @@ build_property.EnableComHosting =
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Julius Basas\source\repos\ElnetRepo\ElnetFirstAct\ElnetFirstAct
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Julius Basas/source/repos/ElnetRepo/ElnetFirstAct/ElnetFirstAct/Views/FB/header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkJcaGVhZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Julius Basas/source/repos/ElnetRepo/ElnetFirstAct/ElnetFirstAct/Views/FB/headerlogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkJcaGVhZGVybG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Julius Basas/source/repos/ElnetRepo/ElnetFirstAct/ElnetFirstAct/Views/FB/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkJcbG9naW4uY3NodG1s
@@ -24,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Julius Basas/source/repos/ElnetRepo/ElnetFirstAct/ElnetFirstAct/Views/FB/register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkJccmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Julius Basas/source/repos/ElnetRepo/ElnetFirstAct/ElnetFirstAct/Views/FB/top.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkJcdG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Julius Basas/source/repos/ElnetRepo/ElnetFirstAct/ElnetFirstAct/Views/Home/Index.cshtml]

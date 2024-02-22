@@ -1,41 +1,72 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@model LoginDto
 @{
 }
 <!DOCTYPE html>
 <!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
 <head>
+    <title>FB: Login</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="~/css/login/style.css">
+    
+   
+    <link rel="icon" type="image/png" href="~/favicon.ico" sizes="32x32">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/login/style.css">
+    <link rel="stylesheet" href="~/css/common.css">
+    <link rel="stylesheet" href="~/css/header.css">
+    <link rel="stylesheet" href="~/css/login/style.css">
+
+    <style>
+        
+        .errorMsg {
+            color: red;
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            margin: 0 0 5px 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="content">
-        <div class="text">
-            Login Form
+    @Html.Partial("header")
+    <div class="container">
+
+
+        <div class="content">
+            <div class="text">
+                Login
+            </div>
+            @if (TempData.ContainsKey("LoginError"))
+            {
+                <div class="errorMsg">
+                    @TempData["LoginError"]
+                </div>
+            }
+            <form method="POST">
+                <div class="field">
+                    <input type="text" name="email" required>
+                    <span class="fas fa-user"></span>
+                    <label>Email</label>
+                </div>
+                <div class="field">
+                    <input type="password" name="password" required>
+                    <span class="fas fa-lock"></span>
+                    <label>Password</label>
+                </div>
+         
+                <button>Sign in</button>
+                <div class="sign-up">
+                    Not a member?
+                    <a href="/FB/Register">Signup now</a>
+                </div>
+            </form>
         </div>
-        <form action="#">
-            <div class="field">
-                <input type="text" required>
-                <span class="fas fa-user"></span>
-                <label>Email or Phone</label>
-            </div>
-            <div class="field">
-                <input type="password" required>
-                <span class="fas fa-lock"></span>
-                <label>Password</label>
-            </div>
-            <div class="forgot-pass">
-                <a href="#">Forgot Password?</a>
-            </div>
-            <button>Sign in</button>
-            <div class="sign-up">
-                Not a member?
-                <a href="/FB/Register">signup now</a>
-            </div>
-        </form>
     </div>
 </body>
 </html>
